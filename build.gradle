@@ -1,0 +1,40 @@
+group 'ch.jug.workshop.chatbot'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.1.60'
+    ext.slackapi_version = '1.2.0'
+    ext.slf4j_version = '1.7.25'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+mainClassName = "ch.jug.workshop.chatbot.HelloBotKt"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version",
+            "com.ullink.slack:simpleslackapi:$slackapi_version",
+            "org.slf4j:slf4j-simple:$slf4j_version"
+    )
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

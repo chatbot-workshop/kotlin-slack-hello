@@ -1,0 +1,24 @@
+= Hello Bot
+
+**A very simple bot example for https://slack.com/[Slack] written in https://kotlinlang.org/[Kotlin].**
+
+== Preparation
+
+. Go to https://my.slack.com/services/new/bot and create a new bot.
+. Write down the name of your bot and the auth token.
+. Clone this repository: `git clone https://github.com/chatbot-workshop/kotlin-slack-hello.git`
+
+== Configuration
+
+Open the file `src/main/resources/bot.conf` and enter the name of the bot, the auth token and the name of the channel, the bot should listen at in the corresponding lines.
+
+== Running
+
+Run the bot within your IDE or use https://gradle.org/[Gradle] at the command line: `./gradlew run`
+
+== Testing
+
+. Open https://slack.com/[Slack] and login using your credentials
+. Go to the channel your bot is listening at
+. Send a message directly to your bot (use `@botName` with the name of your bot)
+. You should receive an answer saying `Hello, your name` with your name
