@@ -1,5 +1,7 @@
 = Hello Bot
 
+image:https://travis-ci.org/chatbot-workshop/kotlin-slack-hello.svg?branch=master["Build Status", link="https://travis-ci.org/chatbot-workshop/kotlin-slack-hello"]
+
 **A very simple bot example for https://slack.com/[Slack] written in https://kotlinlang.org/[Kotlin].**
 
 *Copyright (C) 2017 Marcus Fihlon*
