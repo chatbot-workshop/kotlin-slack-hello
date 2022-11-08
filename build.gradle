@@ -20,7 +20,7 @@ group 'ch.jug.workshop.chatbot'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.20'
+    ext.kotlin_version = '1.7.21'
     ext.slackapi_version = '1.4.0'
     ext.slf4j_version = '2.0.3'
 
